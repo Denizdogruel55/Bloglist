@@ -1,0 +1,5 @@
+
+@model List<Blog>
+    @foreach(var bloglar in Model){
+        @await Html.PartialAsync("_Card",bloglar)
+    }
